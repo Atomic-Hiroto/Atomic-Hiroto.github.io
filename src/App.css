@@ -4,6 +4,7 @@ body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* NavBar Styles */
 #nav-menu{
   display: flex;
   justify-content: space-between;
@@ -40,4 +41,43 @@ body{
 }
 
 
+/* Home Styles */
 
+#home{
+  display: flex;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#home > div:first-of-type{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img{
+  width: 250px;
+  border-radius: 50%;
+}
+
+#user-detail-intro{
+  color: #EEEEEE;
+  font-weight: bold;
+  font-size: 20px;
+}
+.acc{
+  color: #00ADB5;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+  .nav-link{
+    display: none;
+  }
+  #home{
+    flex-direction: column;
+    align-items: center;
+  }
+}
