@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.39a623aa.js",
+    "main.js": "/static/js/main.5761f1e2.js",
+    "static/media/frido.png": "/static/media/frido.a89b94c88945660e6b41.png",
     "static/media/h1.jpg": "/static/media/h1.0ac48259cc2343d0ef99.jpg",
     "static/media/Pritam-Borole-Resume.pdf": "/static/media/Pritam-Borole-Resume.e9266b0c614d31925f55.pdf",
     "index.html": "/index.html",
-    "main.39a623aa.js.map": "/static/js/main.39a623aa.js.map"
+    "main.5761f1e2.js.map": "/static/js/main.5761f1e2.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.39a623aa.js"
+    "static/js/main.5761f1e2.js"
   ]
 }
