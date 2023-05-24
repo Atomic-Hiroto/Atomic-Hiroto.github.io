@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.5761f1e2.js",
+    "main.js": "/static/js/main.c1a4ac82.js",
     "static/media/frido.png": "/static/media/frido.a89b94c88945660e6b41.png",
+    "static/media/boat.png": "/static/media/boat.b7b908900781f9ff7a10.png",
+    "static/media/swiggy.png": "/static/media/swiggy.5f612f4de15b25923584.png",
     "static/media/h1.jpg": "/static/media/h1.0ac48259cc2343d0ef99.jpg",
+    "static/media/ikea.png": "/static/media/ikea.d79eb45c08c748428163.png",
     "static/media/Pritam-Borole-Resume.pdf": "/static/media/Pritam-Borole-Resume.e9266b0c614d31925f55.pdf",
     "index.html": "/index.html",
-    "main.5761f1e2.js.map": "/static/js/main.5761f1e2.js.map"
+    "main.c1a4ac82.js.map": "/static/js/main.c1a4ac82.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.5761f1e2.js"
+    "static/js/main.c1a4ac82.js"
   ]
 }
