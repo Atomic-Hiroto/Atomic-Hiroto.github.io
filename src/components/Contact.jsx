@@ -51,7 +51,6 @@ function Contact(props) {
             <Flex
                 id="contact"
                 flexDirection={"column"}
-                p={50}
                 pt={100}
 
             >
@@ -61,7 +60,7 @@ function Contact(props) {
                         Contacts
                     </Text>
                 </Text>
-                <Flex m={"auto"} mt={10} color={"#EEEEEE"}  w={"70%"} justifyContent={"space-between"}>
+                <Flex m={"auto"} mt={10} color={"#EEEEEE"} p={"20px 0px"} w={"90%"} justifyContent={"space-between"}>
                     <Flex flexDirection={["column","column","row"]}>
                         <Button
                             as={Link}

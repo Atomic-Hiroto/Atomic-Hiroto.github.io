@@ -5,6 +5,7 @@ import swiggy from "../images/swiggy.png";
 import ikea from "../images/ikea.png";
 import boat from "../images/boat.png";
 import { LinkIcon } from "@chakra-ui/icons";
+import { Tilt } from "react-tilt";
 
 function Projects(props) {
     return (
@@ -29,24 +30,29 @@ function Projects(props) {
                 w={"80%"}
                 className="project-card"
             >
-                <Flex
-                    zIndex={1}
-                    borderRadius={8}
-                    w={[200, 200, 200, 200, 450]}
-                    h={[200, 200, 200, 200, 450]}
-                    p={5}
-                    border={"1px solid #EEEEEE"}
-                    transform={"rotate(45deg)"}
-                    backgroundColor={"#393E46"}
-                >
-                    <Img
-                        cursor={"pointer"}
-                        transform={"rotate(-45deg)"}
-                        w={"100%"}
-                        objectFit={"contain"}
-                        src={frido}
-                    />
-                </Flex>
+                <Tilt>
+                    <Flex
+                        zIndex={1}
+                        borderRadius={8}
+                        w={[200, 200, 200, 200, 350]}
+                        h={[200, 200, 200, 200, 350]}
+                        p={5}
+                        border={"1px solid #EEEEEE"}
+                        transform={"rotate(45deg)"}
+                        backgroundColor={"#393E46"}
+                        boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                    >
+                        <Img
+                            cursor={"pointer"}
+                            transform={"rotate(-45deg)"}
+                            w={"100%"}
+                            objectFit={"cover"}
+                            src={frido}
+                            border={"1px solid white"}
+                            borderRadius={8}
+                        />
+                    </Flex>
+                </Tilt>
                 <Flex
                     flexDirection={"column"}
                     borderRadius={8}
@@ -56,6 +62,7 @@ function Projects(props) {
                     w={"100%"}
                     backgroundColor={"#393E46"}
                     border={"1px solid gray"}
+                    boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
                 >
                     <Text
                         fontWeight={"bold"}
@@ -119,24 +126,29 @@ function Projects(props) {
                 w={"80%"}
                 className="project-card"
             >
-                <Flex
-                    zIndex={1}
-                    borderRadius={8}
-                    w={[200, 200, 200, 200, 450]}
-                    h={[200, 200, 200, 200, 450]}
-                    p={5}
-                    border={"1px solid #EEEEEE"}
-                    transform={"rotate(45deg)"}
-                    backgroundColor={"#393E46"}
-                >
-                    <Img
-                        cursor={"pointer"}
-                        transform={"rotate(-45deg)"}
-                        w={"100%"}
-                        objectFit={"contain"}
-                        src={swiggy}
-                    />
-                </Flex>
+                <Tilt>
+                    <Flex
+                        zIndex={1}
+                        borderRadius={8}
+                        w={[200, 200, 200, 200, 350]}
+                        h={[200, 200, 200, 200, 350]}
+                        p={5}
+                        border={"1px solid #EEEEEE"}
+                        transform={"rotate(45deg)"}
+                        backgroundColor={"#393E46"}
+                        boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                    >
+                        <Img
+                            cursor={"pointer"}
+                            transform={"rotate(-45deg)"}
+                            w={"100%"}
+                            objectFit={"cover"}
+                            src={swiggy}
+                            border={"1px solid white"}
+                            borderRadius={8}
+                        />
+                    </Flex>
+                </Tilt>
                 <Flex
                     flexDirection={"column"}
                     borderRadius={8}
@@ -146,6 +158,7 @@ function Projects(props) {
                     w={"100%"}
                     backgroundColor={"#393E46"}
                     border={"1px solid gray"}
+                    boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
                 >
                     <Text
                         fontWeight={"bold"}
@@ -210,24 +223,29 @@ function Projects(props) {
                 w={"80%"}
                 className="project-card"
             >
-                <Flex
-                    zIndex={1}
-                    borderRadius={8}
-                    w={[200, 200, 200, 200, 450]}
-                    h={[200, 200, 200, 200, 450]}
-                    p={5}
-                    border={"1px solid #EEEEEE"}
-                    transform={"rotate(45deg)"}
-                    backgroundColor={"#393E46"}
-                >
-                    <Img
-                        cursor={"pointer"}
-                        transform={"rotate(-45deg)"}
-                        w={"100%"}
-                        objectFit={"contain"}
-                        src={ikea}
-                    />
-                </Flex>
+                <Tilt>
+                    <Flex
+                        zIndex={1}
+                        borderRadius={8}
+                        w={[200, 200, 200, 200, 350]}
+                        h={[200, 200, 200, 200, 350]}
+                        p={5}
+                        border={"1px solid #EEEEEE"}
+                        transform={"rotate(45deg)"}
+                        backgroundColor={"#393E46"}
+                        boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                    >
+                        <Img
+                            cursor={"pointer"}
+                            transform={"rotate(-45deg)"}
+                            w={"100%"}
+                            objectFit={"cover"}
+                            src={ikea}
+                            border={"1px solid white"}
+                            borderRadius={8}
+                        />
+                    </Flex>
+                </Tilt>
                 <Flex
                     flexDirection={"column"}
                     borderRadius={8}
@@ -237,6 +255,7 @@ function Projects(props) {
                     w={"100%"}
                     backgroundColor={"#393E46"}
                     border={"1px solid gray"}
+                    boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
                 >
                     <Text
                         fontWeight={"bold"}
@@ -250,7 +269,9 @@ function Projects(props) {
                         days
                     </Text>
                     <Text textAlign={"right"} className="project-description">
-                        - The clone uses a app wide state managed with redux and also has <br /> sorting, filtering and the complete cart flow.
+                        - The clone uses a app wide state managed with redux and
+                        also has <br /> sorting, filtering and the complete cart
+                        flow.
                     </Text>
                     <br />
                     <Text className="project-tech-stack">
@@ -299,24 +320,29 @@ function Projects(props) {
                 w={"80%"}
                 className="project-card"
             >
-                <Flex
-                    zIndex={1}
-                    borderRadius={8}
-                    w={[200, 200, 200, 200, 450]}
-                    h={[200, 200, 200, 200, 450]}
-                    p={5}
-                    border={"1px solid #EEEEEE"}
-                    transform={"rotate(45deg)"}
-                    backgroundColor={"#393E46"}
-                >
-                    <Img
-                        cursor={"pointer"}
-                        transform={"rotate(-45deg)"}
-                        w={"100%"}
-                        objectFit={"contain"}
-                        src={boat}
-                    />
-                </Flex>
+                <Tilt>
+                    <Flex
+                        zIndex={1}
+                        borderRadius={8}
+                        w={[200, 200, 200, 200, 350]}
+                        h={[200, 200, 200, 200, 350]}
+                        p={5}
+                        border={"1px solid #EEEEEE"}
+                        transform={"rotate(45deg)"}
+                        backgroundColor={"#393E46"}
+                        boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                    >
+                        <Img
+                            cursor={"pointer"}
+                            transform={"rotate(-45deg)"}
+                            w={"100%"}
+                            objectFit={"cover"}
+                            src={boat}
+                            border={"1px solid white"}
+                            borderRadius={8}
+                        />
+                    </Flex>
+                </Tilt>
                 <Flex
                     flexDirection={"column"}
                     borderRadius={8}
@@ -326,6 +352,7 @@ function Projects(props) {
                     w={"100%"}
                     backgroundColor={"#393E46"}
                     border={"1px solid gray"}
+                    boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
                 >
                     <Text
                         fontWeight={"bold"}
@@ -339,7 +366,9 @@ function Projects(props) {
                         days
                     </Text>
                     <Text textAlign={"right"} className="project-description">
-                        - The clone was made to look as close as possible to the boAt website and has state managed with LocalStorage and also has the whole user login and payment flow.
+                        - The clone was made to look as close as possible to the
+                        boAt website and has state managed with LocalStorage and
+                        also has the whole user login and payment flow.
                     </Text>
                     <br />
                     <Text className="project-tech-stack">
