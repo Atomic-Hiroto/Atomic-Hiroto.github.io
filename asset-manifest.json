@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.0a1aba91.js",
-    "static/media/frido.png": "/static/media/frido.a89b94c88945660e6b41.png",
-    "static/media/boat.png": "/static/media/boat.b7b908900781f9ff7a10.png",
-    "static/media/swiggy.png": "/static/media/swiggy.5f612f4de15b25923584.png",
+    "main.js": "/static/js/main.e70b3167.js",
     "static/media/h1.jpg": "/static/media/h1.0ac48259cc2343d0ef99.jpg",
-    "static/media/ikea.png": "/static/media/ikea.d79eb45c08c748428163.png",
+    "static/media/swiggy.png": "/static/media/swiggy.bf6696262b4df29c3360.png",
+    "static/media/boat.png": "/static/media/boat.7339ce9ebefc8ae32e88.png",
     "static/media/Pritam-Borole-Resume.pdf": "/static/media/Pritam-Borole-Resume.e9266b0c614d31925f55.pdf",
+    "static/media/frido.png": "/static/media/frido.eff19dad54429efa996a.png",
+    "static/media/ikea.png": "/static/media/ikea.a8c3f13a65111d8c41c1.png",
     "index.html": "/index.html",
-    "main.0a1aba91.js.map": "/static/js/main.0a1aba91.js.map"
+    "main.e70b3167.js.map": "/static/js/main.e70b3167.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.0a1aba91.js"
+    "static/js/main.e70b3167.js"
   ]
 }
