@@ -9,6 +9,9 @@ function About(props) {
             flexDirection={"column"}
             alignItems={"center"}
             p={5}
+            mt={20}
+            pt={100}
+
         >
             <Text fontWeight={"bold"} color={"#EEEEEE"} fontSize={30}>
                 <Text as={"span"} color={"#00ADB5"}>
@@ -26,18 +29,18 @@ function About(props) {
                         w={"100%"}
                     />
                 </Box>
-                <Box>
+                <Box id="user-detail-intro">
                     <Text id="user-detail-name"
-                        color={"#EEEEEE"} fontSize={20}> - Hello, Im{" "}
+                        color={"#EEEEEE"} fontSize={20}> - Hello, I'm{" "}
                         <Text as={"span"} fontWeight={"bold"}>
                             Pritam
                         </Text>{" "}
-                        and i love working on creative and interesting projects.
+                        and I love working on creative and interesting projects.
                     </Text>
                     <Text color={"#EEEEEE"} fontSize={20}>
                         -{" "}
                         <Text
-                            id="user-detail-intro"
+                            
                             as={"span"}
                             fontWeight={"bold"}
                         >
@@ -45,15 +48,15 @@ function About(props) {
                         </Text>{" "}
                         and{" "}
                         <Text as={"span"} fontWeight={"bold"}>
-                            passionate
+                            passionate  
                         </Text>{" "}
                         with experience in various web technologies and
-                        frameworks.
+                        frameworks such as React, Redux, MangoDB and Express.
                     </Text>
                     <Text color={"#EEEEEE"} fontSize={20}>
                         -{" "}
                         <Text as={"span"} fontWeight={"bold"}>
-                            Adaptable, quick- learning,{" "}
+                            Adaptable, quick-learning,{" "}
                         </Text>
                         and{" "}
                         <Text as={"span"} fontWeight={"bold"}>
