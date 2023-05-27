@@ -278,7 +278,7 @@ function Projects(props) {
                         <Text as={"span"} fontWeight={"bold"} color={"#00ADB5"}>
                             TECH STACK:
                         </Text>{" "}
-                        REACT | REDUX | REDUX THUNK | CHAKRAUI
+                        REACT | REDUX | REDUX-THUNK | CHAKRA-UI
                     </Text>
                     <br />
                     <Flex gap={5} w={"100%"} flexDirection={["column", "row"]}>

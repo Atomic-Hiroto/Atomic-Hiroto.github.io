@@ -1,26 +1,41 @@
 import React from "react";
 import { Element, Link } from "react-scroll";
-import { Box, Button, Flex, Text, useDisclosure } from "@chakra-ui/react";
-import { DownloadIcon } from "@chakra-ui/icons";
+import {
+    Accordion,
+    AccordionButton,
+    AccordionIcon,
+    AccordionItem,
+    AccordionPanel,
+    Box,
+    Button,
+    Flex,
+    IconButton,
+    Text,
+    useDisclosure,
+} from "@chakra-ui/react";
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
 import pdf from "../other/Pritam-Borole-Resume.pdf";
 
 function NavBar(props) {
     const handleButtonClick = () => {
-        window.open('https://drive.google.com/file/d/14u7LzggoNAAlz6a2mgSkSabl3xpURU_O/view?usp=share_link', '_blank'); // Open a new tab with the desired URL
-      
-        const link = document.createElement('a');
+        window.open(
+            "https://drive.google.com/file/d/14u7LzggoNAAlz6a2mgSkSabl3xpURU_O/view?usp=share_link",
+            "_blank"
+        ); // Open a new tab with the desired URL
+
+        const link = document.createElement("a");
         link.href = pdf;
         link.download = pdf;
-        link.target = '_blank';
+        link.target = "_blank";
         link.click();
-      };
+    };
     return (
         <>
             <Element name="top"></Element>
             <Flex
                 position={"sticky"}
                 justifyContent={"space-between"}
-                alignItems={"center"}
+                alignItems={["flex-start",null,"center"]}
                 top={0}
                 Text={25}
                 color={"#EEEEEE"}
@@ -29,7 +44,7 @@ function NavBar(props) {
                 zIndex={2}
                 id="nav-menu"
             >
-                <Flex>
+                <Flex alignItems={"center"} >
                     <Link smooth={true} duration={500} to={"top"}>
                         <Text
                             fontWeight={"bold"}
@@ -140,7 +155,97 @@ function NavBar(props) {
                         </Button>
                     </Text>
                 </Flex>
-                <Box display={["block", null, "none"]}></Box>
+                <Box display={["block", null, "none"]}>
+                    <Accordion allowToggle >
+                        <AccordionItem border={"0"} >
+                            <h2>
+                                <AccordionButton p={0}>
+                                    <IconButton variant={"ghost"} _hover={{"":""}} icon={<HamburgerIcon />} />
+                                    <AccordionIcon />
+                                </AccordionButton>
+                            </h2>
+                            <AccordionPanel pb={2} >
+                                <Flex flexDirection={"column"} gap={2}>
+                                <Text
+                        fontWeight={"bold"}
+                        cursor={"pointer"}
+                        transition={"0.2s ease-in-out"}
+                        _hover={{ color: "#00ADB5" }}
+                    >
+                        <Link
+                            smooth={true}
+                            duration={500}
+                            to="top"
+                            className="nav-link home"
+                        >
+                            HOME
+                        </Link>
+                    </Text>
+                    <Text
+                        fontWeight={"bold"}
+                        cursor={"pointer"}
+                        transition={"0.2s ease-in-out"}
+                        _hover={{ color: "#00ADB5" }}
+                    >
+                        <Link
+                            smooth={true}
+                            duration={500}
+                            to="about"
+                            className="nav-link about"
+                        >
+                            ABOUT
+                        </Link>
+                    </Text>
+                    <Text
+                        fontWeight={"bold"}
+                        cursor={"pointer"}
+                        transition={"0.2s ease-in-out"}
+                        _hover={{ color: "#00ADB5" }}
+                    >
+                        <Link
+                            smooth={true}
+                            duration={500}
+                            to="skills"
+                            className="nav-link skills"
+                        >
+                            SKILLS
+                        </Link>
+                    </Text>
+                    <Text
+                        fontWeight={"bold"}
+                        cursor={"pointer"}
+                        transition={"0.2s ease-in-out"}
+                        _hover={{ color: "#00ADB5" }}
+                    >
+                        <Link
+                            smooth={true}
+                            duration={500}
+                            to="projects"
+                            className="nav-link projects"
+                        >
+                            PROJECTS
+                        </Link>
+                    </Text>
+                    <Text
+                        fontWeight={"bold"}
+                        cursor={"pointer"}
+                        transition={"0.2s ease-in-out"}
+                        _hover={{ color: "#00ADB5" }}
+                    >
+                        <Link
+                            smooth={true}
+                            duration={500}
+                            to="contact"
+                            className="nav-link contact"
+                        >
+                            CONTACT
+                        </Link>
+                    </Text>
+                                </Flex>
+                            </AccordionPanel>
+                        </AccordionItem>
+                    </Accordion>
+                </Box>
             </Flex>
         </>
     );
