@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.8abf6f1d.js",
+    "main.js": "/static/js/main.873cfad4.js",
     "static/media/h1.jpg": "/static/media/h1.0ac48259cc2343d0ef99.jpg",
     "static/media/swiggy.png": "/static/media/swiggy.bf6696262b4df29c3360.png",
     "static/media/boat.png": "/static/media/boat.7339ce9ebefc8ae32e88.png",
@@ -9,10 +9,10 @@
     "static/media/frido.png": "/static/media/frido.eff19dad54429efa996a.png",
     "static/media/ikea.png": "/static/media/ikea.a8c3f13a65111d8c41c1.png",
     "index.html": "/index.html",
-    "main.8abf6f1d.js.map": "/static/js/main.8abf6f1d.js.map"
+    "main.873cfad4.js.map": "/static/js/main.873cfad4.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.8abf6f1d.js"
+    "static/js/main.873cfad4.js"
   ]
 }
