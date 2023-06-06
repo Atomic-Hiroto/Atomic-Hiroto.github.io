@@ -88,8 +88,8 @@ function Contact(props) {
                         </Button>
                     </Flex>
                     <Flex alignItems={"center"} flexDirection={["column","row"]} gap={5}>
-                        <IconButton id="contact-github" as={Link} href="https://github.com/Atomic-Hiroto" colorScheme="teal" icon={<FaGithub />} />
-                        <IconButton id="contact-linkedin" as={Link} href="https://www.linkedin.com/in/pritam-sb/" colorScheme="teal" icon={<FaLinkedinIn />} />
+                        <IconButton id="contact-github" as={Link} target={"_blank"} href="https://github.com/Atomic-Hiroto" colorScheme="teal" icon={<FaGithub />} />
+                        <IconButton id="contact-linkedin" as={Link} target={"_blank"} href="https://www.linkedin.com/in/pritam-sb/" colorScheme="teal" icon={<FaLinkedinIn />} />
                     </Flex>
                 </Flex>
             </Flex>
