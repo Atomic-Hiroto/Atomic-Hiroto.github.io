@@ -12,7 +12,7 @@ import {HideOn} from "react-hide-on-scroll"
 function Home(props) {
     const handleButtonClick = () => {
         window.open(
-            "https://drive.google.com/file/d/14u7LzggoNAAlz6a2mgSkSabl3xpURU_O/view?usp=share_link",
+            "https://drive.google.com/file/d/1p8DNfvLNRX7NwFUqs4baIflBwK7H49tp/view?usp=sharing",
             "_blank"
         ); // Open a new tab with the desired URL
 

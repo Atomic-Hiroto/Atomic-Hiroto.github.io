@@ -11,7 +11,6 @@ import {
     Flex,
     IconButton,
     Text,
-    useDisclosure,
 } from "@chakra-ui/react";
 import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
 import pdf from "../other/Pritam-Borole-Resume.pdf";
@@ -19,7 +18,7 @@ import pdf from "../other/Pritam-Borole-Resume.pdf";
 function NavBar(props) {
     const handleButtonClick = () => {
         window.open(
-            "https://drive.google.com/file/d/14u7LzggoNAAlz6a2mgSkSabl3xpURU_O/view?usp=share_link",
+            "https://drive.google.com/file/d/1p8DNfvLNRX7NwFUqs4baIflBwK7H49tp/view?usp=sharing",
             "_blank"
         ); // Open a new tab with the desired URL
 
