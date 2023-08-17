@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Img, Text } from "@chakra-ui/react";
+import { Center, Flex, Img, Text } from "@chakra-ui/react";
 import React from "react";
 import { Tilt } from "react-tilt";
 
@@ -405,7 +405,7 @@ function Skills(props) {
                                 w={"95%"}
                                 display={"block"}
                             />
-                            <Text className="skills-card-name">VS code</Text>
+                            <Text className="skills-card-name">VScode</Text>
                         </Center>
                     </Flex>
                 </Tilt>

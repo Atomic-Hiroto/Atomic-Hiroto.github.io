@@ -1,13 +1,17 @@
-import { Flex, Img, Text, Button, Link } from "@chakra-ui/react";
+import { Flex, Img, Text, Button, Link, useDisclosure, Drawer, DrawerContent, DrawerCloseButton, DrawerBody, DrawerOverlay, DrawerHeader } from "@chakra-ui/react";
 import React from "react";
 import frido from "../images/frido.png";
 import swiggy from "../images/swiggy.png";
 import ikea from "../images/ikea.png";
 import boat from "../images/boat.png";
+import country from "../images/country.png";
+import mart from "../images/mart.png";
 import { LinkIcon } from "@chakra-ui/icons";
 import { Tilt } from "react-tilt";
 
 function Projects(props) {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
     return (
         <Flex
             id="projects"
@@ -17,12 +21,58 @@ function Projects(props) {
             mt={20}
             pt={100}
         >
+            <Flex gap={7}>
             <Text fontWeight={"bold"} color={"#EEEEEE"} fontSize={30}>
                 My{" "}
                 <Text as={"span"} color={"#00ADB5"}>
                     Projects
                 </Text>
             </Text>
+            <Button ref={btnRef} colorScheme='teal' onClick={onOpen} >
+        Mini Projects {">"}
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement='right'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+        size={"lg"}
+      >
+        <DrawerOverlay />
+        <DrawerContent backgroundColor={"#222831"}>
+          <DrawerCloseButton color={"#EEEEEE"} />
+          <DrawerHeader color={"#EEEEEE"} fontWeight={"bold"}>Mini Projects</DrawerHeader>
+          <DrawerBody>
+            <Flex flexDirection={"column"} gap={8}>
+                <Flex backgroundColor={"#393E46"} border={"1px solid #EEEEEE"} borderRadius={8} p={5} color={"#EEEEEE"} flexDirection={"column"} cursor={"pointer"} onClick={()=>{
+                    window.open(
+                        "https://countryapp-seven.vercel.app/",
+                        "_blank"
+                    ); // Open a new tab with the desired URL
+                }}>
+                    <Text fontWeight={"Bold"}>Country Details App</Text>
+                    <Img m={5} border={"1px solid gray"} borderRadius={8} src={country} />
+                    <Text color={"#EEEEEE"}>A responsive React application built with Chakra UI that fetches country data from an API and displays it in a sortable grid view. Features include a dark mode toggle, sorting by population, and filtering by region.</Text>
+                    <br/>
+                    <Text>Click to Preview.</Text>
+                </Flex>
+                <Flex backgroundColor={"#393E46"} border={"1px solid #EEEEEE"} borderRadius={8} p={5} color={"#EEEEEE"} flexDirection={"column"} cursor={"pointer"} onClick={()=>{
+                    window.open(
+                        "https://masai-mart-pi.vercel.app/index.html",
+                        "_blank"
+                    ); // Open a new tab with the desired URL
+                }}>
+                    <Text fontWeight={"Bold"}>Masai Mart App</Text>
+                    <Img m={5} border={"1px solid gray"} borderRadius={8} src={mart} />
+                    <Text color={"#EEEEEE"}>An e-commerce website built with HTML, CSS and vanilla JavaScript that fetches mock product data from an API and displays it in a paginated grid view. Features sorting by price, filtering by category, and a wishlist functionality that allows users to save items and view them on a separate wishlist page. The wishlist is persisted using local storage.</Text>
+                    <br/>
+                    <Text>Click to Preview.</Text>
+                </Flex>
+            </Flex>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+      </Flex>
             <Flex
                 m={"80px 0px"}
                 flexDirection={["column", "column", "column", "column", "row"]}

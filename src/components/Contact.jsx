@@ -1,5 +1,5 @@
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-import { Center, Flex, Img, Text, Button, Link, Box, IconButton } from "@chakra-ui/react";
+import { Center, Flex, Img, Text, Button, Link, IconButton } from "@chakra-ui/react";
 import React from "react";
 import GithubCalendar from "react-github-calendar";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'

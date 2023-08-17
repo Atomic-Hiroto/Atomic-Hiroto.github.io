@@ -1,7 +1,7 @@
 import React from "react";
 import { Element, Link } from "react-scroll";
 import headshot from "../images/h1.jpg";
-import { Box, Button, Center, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import { ViewIcon } from "@chakra-ui/icons";
 import pdf from "../other/Pritam-Borole-Resume.pdf";
