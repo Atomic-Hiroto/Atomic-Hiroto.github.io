@@ -6,6 +6,7 @@ import ikea from "../images/ikea.png";
 import boat from "../images/boat.png";
 import country from "../images/country.png";
 import mart from "../images/mart.png";
+import investpe from "../images/investpe.png";
 import { LinkIcon } from "@chakra-ui/icons";
 import { Tilt } from "react-tilt";
 
@@ -53,6 +54,18 @@ function Projects(props) {
                     <Text fontWeight={"Bold"}>Country Details App</Text>
                     <Img m={5} border={"1px solid gray"} borderRadius={8} src={country} />
                     <Text color={"#EEEEEE"}>A responsive React application built with Chakra UI that fetches country data from an API and displays it in a sortable grid view. Features include a dark mode toggle, sorting by population, and filtering by region.</Text>
+                    <br/>
+                    <Text>Click to Preview.</Text>
+                </Flex>
+                <Flex backgroundColor={"#393E46"} border={"1px solid #EEEEEE"} borderRadius={8} p={5} color={"#EEEEEE"} flexDirection={"column"} cursor={"pointer"} onClick={()=>{
+                    window.open(
+                        "https://investpe-seven.vercel.app",
+                        "_blank"
+                    ); // Open a new tab with the desired URL
+                }}>
+                    <Text fontWeight={"Bold"}>InvestPe Webapp</Text>
+                    <Img m={5} border={"1px solid gray"} borderRadius={8} src={investpe} />
+                    <Text color={"#EEEEEE"}>A beautiful frontend created using reactjs and vanilla css. Has two pages - landing / login page with a dropdown.</Text>
                     <br/>
                     <Text>Click to Preview.</Text>
                 </Flex>

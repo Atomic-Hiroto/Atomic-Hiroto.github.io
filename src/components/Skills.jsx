@@ -138,6 +138,36 @@ function Skills(props) {
                         >
                             <Img
                                 className="skills-card-img"
+                                src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png"
+                                w={"80%"}
+                                display={"block"}
+                            />
+                            <Text className="skills-card-name">Typescript</Text>
+                        </Center>
+                    </Flex>
+                </Tilt>
+                <Tilt>
+                    <Flex
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                        transform={"rotate(45deg)"}
+                        p={5}
+                        h={100}
+                        w={100}
+                        backgroundColor={"#393E46"}
+                        cursor={"pointer"}
+                        _hover={{
+                            "box-shadow":
+                                "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+                        }}
+                    >
+                        <Center
+                            flexDirection={"column"}
+                            transform={"rotate(-45deg)"}
+                            className="skills-card"
+                        >
+                            <Img
+                                className="skills-card-img"
                                 src="https://mohitkss.github.io/static/media/react.22d1f2096ed82cab7a8a.png"
                                 w={"95%"}
                                 display={"block"}
