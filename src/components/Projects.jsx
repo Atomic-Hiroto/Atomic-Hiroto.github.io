@@ -7,6 +7,7 @@ import boat from "../images/boat.png";
 import country from "../images/country.png";
 import mart from "../images/mart.png";
 import investpe from "../images/investpe.png";
+import breads from "../images/breads.png"
 import { LinkIcon } from "@chakra-ui/icons";
 import { Tilt } from "react-tilt";
 
@@ -86,6 +87,100 @@ function Projects(props) {
         </DrawerContent>
       </Drawer>
       </Flex>
+      <Flex
+                m={"80px 0px"}
+                flexDirection={["column", "column", "column", "column", "row"]}
+                alignItems={"center"}
+                w={"80%"}
+                className="project-card"
+            >
+                <Tilt>
+                    <Flex
+                        zIndex={1}
+                        borderRadius={8}
+                        w={[200, 200, 200, 200, 350]}
+                        h={[200, 200, 200, 200, 350]}
+                        p={5}
+                        border={"1px solid #EEEEEE"}
+                        transform={"rotate(45deg)"}
+                        backgroundColor={"#393E46"}
+                        boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                    >
+                        <Img
+                            cursor={"pointer"}
+                            transform={"rotate(-45deg)"}
+                            w={"100%"}
+                            objectFit={"cover"}
+                            src={breads}
+                            border={"1px solid white"}
+                            borderRadius={8}
+                        />
+                    </Flex>
+                </Tilt>
+                <Flex
+                    flexDirection={"column"}
+                    borderRadius={8}
+                    p={50}
+                    color={"#EEEEEE"}
+                    alignItems={"flex-end"}
+                    w={"100%"}
+                    backgroundColor={"#393E46"}
+                    border={"1px solid gray"}
+                    boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} 
+                >
+                    <Text
+                        fontWeight={"bold"}
+                        fontSize={"20px"}
+                        className="project-title"
+                    >
+                        Breads - Social Networking App
+                    </Text>
+                    <Text className="project-description">
+                        - A twitter like webapp where users can login and post their thoughts - A solo project
+                    </Text>
+                    <Text className="project-description">
+                        - Uses various new technologies to achieve a reliable, scalable and fast experience.
+                    </Text>
+                    <br />
+                    <Text className="project-tech-stack">
+                        <Text as={"span"} fontWeight={"bold"} color={"#00ADB5"}>
+                            TECH STACK:
+                        </Text>{" "}
+                        NEXTJS | tRPC | PRISMA | TAILWIND | CLERK-AUTH | PLANETSCALE
+                    </Text>
+                    <br />
+                    <Flex gap={5} w={"100%"} flexDirection={["column", "row"]}>
+                        <Button
+                            as={Link}
+                            href="https://github.com/Atomic-Hiroto/breads"
+                            target="_blank"
+                            className="project-github-link"
+                            variant={"ghost"}
+                            rightIcon={<LinkIcon />}
+                            _hover={{
+                                color: "#00ADB5",
+                                "background-color": "white",
+                            }}
+                        >
+                            GitHub
+                        </Button>
+                        <Button
+                            as={Link}
+                            href="https://breads-beta.vercel.app/"
+                            target="_blank"
+                            className="project-deployed-link"
+                            variant={"ghost"}
+                            rightIcon={<LinkIcon />}
+                            _hover={{
+                                color: "#00ADB5",
+                                "background-color": "white",
+                            }}
+                        >
+                            Deployed Link
+                        </Button>
+                    </Flex>
+                </Flex>
+            </Flex>
             <Flex
                 m={"80px 0px"}
                 flexDirection={["column", "column", "column", "column", "row"]}
@@ -147,7 +242,7 @@ function Projects(props) {
                         <Text as={"span"} fontWeight={"bold"} color={"#00ADB5"}>
                             TECH STACK:
                         </Text>{" "}
-                        REACT | REACT-PLAYER | CHAKRA UI | FRAMER MOTION
+                        REACT | REACT-PLAYER | CHAKRA-UI | FRAMER MOTION
                     </Text>
                     <br />
                     <Flex gap={5} w={"100%"} flexDirection={["column", "row"]}>
