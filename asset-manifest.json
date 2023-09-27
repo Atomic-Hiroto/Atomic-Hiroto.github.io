@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.7e906908.js",
+    "main.js": "/static/js/main.5b3ea717.js",
     "static/media/h1.jpg": "/static/media/h1.0ac48259cc2343d0ef99.jpg",
     "static/media/swiggy.png": "/static/media/swiggy.bf6696262b4df29c3360.png",
     "static/media/boat.png": "/static/media/boat.7339ce9ebefc8ae32e88.png",
@@ -11,11 +11,12 @@
     "static/media/ikea.png": "/static/media/ikea.a8c3f13a65111d8c41c1.png",
     "static/media/country.png": "/static/media/country.0abbf1b654edaa28b233.png",
     "static/media/investpe.png": "/static/media/investpe.cc6a2c5b9ba975b72b4c.png",
+    "static/media/breads.png": "/static/media/breads.d11f6e753c93650dac27.png",
     "index.html": "/index.html",
-    "main.7e906908.js.map": "/static/js/main.7e906908.js.map"
+    "main.5b3ea717.js.map": "/static/js/main.5b3ea717.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.7e906908.js"
+    "static/js/main.5b3ea717.js"
   ]
 }
